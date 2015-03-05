@@ -805,7 +805,11 @@ Más información en: [http://en.wikibooks.org/wiki/LaTeX/Presentations](http://
 
 ***
 
-Thanks!
+# Thank you
+
+## Lluís Ramon
+
+## Carlos Bort
 
 
 
