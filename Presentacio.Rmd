@@ -33,6 +33,8 @@ output: slidy_presentation
 
 # Ejemplo
 
+<br>
+
 1. Data preparation
 2. Modeling
 3. Generating report
@@ -49,12 +51,14 @@ output: slidy_presentation
 
 # Conceptos
 
+<br>
+
 * __LaTeX__: centrado en el contenido y no la estética
-* __markdown__: escritura fácil de paginas web
-* __Sweave__: generar informes LaTeX y cálculos en R
-* __knitr__: actualización de Sweave más general 
-* __pandoc__: transformar entre markup languages
-* __rmarkdown__: generar documentos con markdown y cálculos en R
+* __markdown__: markup language para páginas web
+* __Sweave__: genera informes LaTeX con cálculos en R
+* __knitr__: actualización de Sweave más flexible y general 
+* __pandoc__: transforma entre markup languages
+* __rmarkdown__: genera documentos markdown con cálculos en R
 
 # Requisitos
 
@@ -79,16 +83,18 @@ output: slidy_presentation
 
 # Ejercicio 1: Generar el primer documento
 
+<br>
+
 <div class="columns-2">
-<img src="images/crear_rmarkdown.png" alt="output_option" height="400" hspace="40">
-<img src="images/documents_rmarkdown.png" alt="output_option" height="400">
+<img src="images/crear_rmarkdown.png" height="400" hspace="40">
+<img src="images/documents_rmarkdown.png" height="400">
 </div>
 
 
 # Markdown basics
 
 ```markdown
-# Nivel 1
+# Nivel 1 
 ## Nivel 2
 ### Nivel 3
 
@@ -103,7 +109,7 @@ _cursiva_   __negrita__
  + elemento 2.2
 * elemento 3
 
-Formulas en formato LaTeX $\beta^2$
+Formulas en formato LaTeX van entre dolares $\beta^2$
 
 <!-- Comentario en Markdown basics -->
 ```
@@ -112,19 +118,26 @@ Formulas en formato LaTeX $\beta^2$
 
 <div class="columns-2">
 <a href="http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-reference.pdf">
-<img src="images/rmarkdown_reference_guide_60.png" alt="output_option" height="400" hspace="40">
+<img src="images/rmarkdown_reference_guide_60.png" height="400" hspace="40">
 </a>
-<img src="images/rstudio_quick_reference.png" alt="output_option" height="350">
+<img src="images/rstudio_quick_reference.png" height="350">
 
 </div>
 
 
 # Document Templates
 
-![Foo2](images/documents_rmarkdown.png)
+<div class="columns-2">
+<a href="http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-reference.pdf">
+<img src="images/documents_rmarkdown.png" height="400" hspace="40">
+</a>
+<img src="images/documents_from_rstudio.png" height="350">
+</div>
 
 
 # Ejercicio 2: Customizar el documento
+
+<br>
 
 * Añadir un nivel
 * Añadir un segundo nivel
@@ -134,13 +147,13 @@ Formulas en formato LaTeX $\beta^2$
 
 # Opciones de las templates
 
-![Foo3](images/more_options_documents.png)
+<img src="images/more_options_documents.png" height="400" hspace="40">
 
 # Corrector ortográfico
 
 <div class="columns-2">
-<img src = "images/corrector_rmarkdown.png" alt = "output_option" height="200" hspace="40">
-<img src = "images/escoger_idioma_corrector.png" alt = "output_option" height="400">
+<img src = "images/corrector_rmarkdown.png" height="200" hspace="40">
+<img src = "images/escoger_idioma_corrector.png" height="400">
 </div>
 
 # Knitr
@@ -342,7 +355,7 @@ p + ggtitle("In R we trust!")
 ```</code>
 </pre>
 
-```{r, echo=FALSE,fig.height=2,fig.width:3,fig.align='left',dpi=100}
+```{r, echo=FALSE,fig.height=2, fig.width = 3,fig.align='left',dpi=100}
 library(ggplot2);library(knitr)
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length)) + geom_point(aes(color = Species))
 p + ggtitle("In R we trust!")
@@ -399,7 +412,7 @@ summary(cars)
 
 * Podemos crear opciones globales para nuestros chunks
 
-```{r,tidy=TRUE}
+```{r,tidy=TRUE, eval = FALSE}
 library(knitr)
 
 opts_chunk$set(echo = FALSE)
@@ -428,7 +441,7 @@ m1$print('chart2', include_assets = TRUE)
 ```</code>
 </pre>
 
-```{r results = 'asis', comment = NA, message=FALSE, warning=FALSE}
+```{r results = 'asis', comment = NA, message=FALSE, warning = FALSE}
 require(rCharts)
 data(economics, package = 'ggplot2')
 econ <- transform(economics, date = as.character(date))
@@ -460,7 +473,9 @@ m1$print('chart2', include_assets = TRUE)
 
 ***
 
-# Ejercicio 3: Define diferentes chunks
+# Ejercicio 3: Usar diferentes chunks
+
+<br>
 
 * Modificar el tamaño de las graficas
 * Modificar que no se vea el codigo, mensajes, errores o warnings
@@ -471,7 +486,11 @@ m1$print('chart2', include_assets = TRUE)
 
 # Presentation Templates
 
-![Foo3](images/presentacions_rmarkdown.png)
+<br>
+
+## Funciona igual que los documentos
+
+<img src="images/presentacions_rmarkdown.png" height="400" hspace="40">
 
 # Añadir codigo html directamente
 
@@ -499,7 +518,7 @@ dygraph(lungDeaths)
 
 # Mejorando el aspecto de las tablas
 
-Chunk option result = 'asis'
+Usar chunk option ```result = 'asis'```.
 
 * package knitr (kable)
 * package xtable 
@@ -514,27 +533,29 @@ http://cran.r-project.org/web/views/ReproducibleResearch.html
 
 ```{r, eval = TRUE}
 library(xtable)
-xmtcars <- xtable(head(iris), caption = "5 primeros valores de iris")
-print.xtable(xmtcars, type = "html")
+xIris <- xtable(head(iris), caption = "5 primeros valores de iris")
+print.xtable(xIris, type = "html")
 ```
 
-Añadiendo el chunk option result = 'asis'
+Añadiendo el chunk option ```result = 'asis'```
 
 ```{r, eval = TRUE, results = 'asis'}
 library(xtable)
-xmtcars <- xtable(head(iris), caption = "5 primeros valores de iris")
-print.xtable(xmtcars, type = "html")
+xIris <- xtable(head(iris), caption = "5 primeros valores de iris")
+print.xtable(xIris, type = "html")
 ```
 
 ***
 
-# Usando knit_print
+# Adaptar la salida del chunk
 
-render = knit_print
+<br>
 
-library("printr")
+* Chunk option ```render = knit_print```
+* Vignette de knitr [Custom Print Methods](http://cran.r-project.org/web/packages/knitr/vignettes/knit_print.html)
+* Definir metodos a la función knit_print de knitr
+* Del creador de knitr llega [printr](http://yihui.name/printr/) 
 
-https://github.com/yihui/printr
 
 # Ejemplo knit_print
 
@@ -544,13 +565,14 @@ head(iris)
 
 ```{r}
 library(knitr)
-library(printr) # A github
+library(printr) # De github https://github.com/yihui/printr
 head(iris)
 ```
 
 # Añadiendo opciones de LaTeX
 
-* Directamente al codigo
+* En documentos pdf o presentaciones Beamer
+* Añadir directamente al codigo o entre dolares
 * En el header-includes
 
 
@@ -564,8 +586,7 @@ header-includes:
 - \usepackage{fancyhdr}
 - \fancyfoot[CO,CE]{\em pàg. \thepage}
 - \fancyhead[LE,LO]{\em \thetitle}
-- \rfoot{\includegraphics[width = 3cm]{sct_gris}}
-- \lfoot{\includegraphics[width = 3cm]{gen_gris}}
+- \rfoot{\includegraphics[width = 3cm]{upc}}
 ---
 ````
 
@@ -575,18 +596,30 @@ header-includes:
 
 * [rtices package](https://github.com/rstudio/rticles)
 * [revealjs](https://github.com/jjallaire/revealjs)
-* [upc]()
+
 
 # Crear tu propia template
 
+<br>
 
+* Incluida en un package
+* En el directorio: inst/rmarkdown/templates/my_template
+    + template.yaml
+    + skeleton.Rmd
+    + default.tex o styles.css
+* Una función ejecutará la template
 
+# Ejemplo upcTemplate
+
+<br>
+
+* [upcTemplate](https://github.com/LluisRamon?tab=repositories)
 
 ***
 
 # .Rnw/LaTeX
 
-<img src="images/latex.png" alt="output_option" height="50"> 
+<img src="images/latex.png" height="50"> 
 
 * Mismo concepto, el papel deja de ser markdown para pasar a ser LaTeX.
 
@@ -607,13 +640,13 @@ header-includes:
 
 # .Rnw/Creación Documento
 
-<img src="images/img4.png" alt="output_option" height="400"> 
+<img src="images/img4.png" height="400"> 
 
-<img src="images/img5.png" alt="output_option" height="130"> 
+<img src="images/img5.png" height="130"> 
 
 Recordar, Tools / Global Options:
 
-<img src="images/img3.tiff" alt="output_option" height="400"> 
+<img src="images/img3.tiff" height="400"> 
 
 ***
 
@@ -627,9 +660,9 @@ Recordar, Tools / Global Options:
 
 * Ejemplo: 
 
-<img src="images/img6.png" alt="output_option" height="400"> 
+<img src="images/img6.png" height="400"> 
 
-<img src="images/img7.png" alt="output_option" height="400"> 
+<img src="images/img7.png" height="400"> 
 
 ***
 
@@ -651,7 +684,7 @@ Recordar, Tools / Global Options:
 
     + .?: Quizá puede salir alguna extensión más, centrarnos en .tex, .pdf, .log.
 
-<img src="images/img8.png" alt="output_option" height="150"> 
+<img src="images/img8.png" height="150"> 
 
 ***
 # .Rnw/Chunk
@@ -675,9 +708,11 @@ rnorm(10)
 
 # Ejercicio 4: Crear un Rnw
 
+<br>
+
 * Crea tu primer documento LaTeX.
 
-* Repetir el ejemplo del ejercicio X.
+* Repetir el ejemplo del ejercicio 3.
 
 * Compilar.
 
@@ -730,7 +765,7 @@ Más información en: [http://en.wikibooks.org/wiki/LaTeX/Presentations](http://
 
 * What happens if you ask for too much power from Markdown?
 
-<img src="images/gif1.gif" alt="output_option" height="200">
+<img src="images/gif1.gif" height="200">
 
 * Post recoge la siguiente idea:
     + "Markdown is super easy to learn and type, but it is primarily targeted at HTML pages". (2013)
@@ -765,7 +800,7 @@ Más información en: [http://en.wikibooks.org/wiki/LaTeX/Presentations](http://
 
 # .Rnw/En caso de duda...
 
-<img src="images/img11.png" alt="output_option" align="middle" height="1500"> 
+<img src="images/img11.png" align="middle" height="1500"> 
 
 
 ***
