@@ -176,9 +176,9 @@ Formulas en formato LaTeX van entre dolares $\beta^2$
 
 * IDEA: Tenemos un papel en documento, donde ciertas partes son escritas y otras salidas de R.
 
-* How a Chunk looks like? 
+* How does a Chunk look like? 
 
-<img src="images/img2.tiff" height="200">
+<img src="images/img2tiff.png" height="200">
 
 ```{r}
 paste("Mi primer chunk, empecemos por un simple paste!")
@@ -348,7 +348,7 @@ paste(Eval)
 * echo __FALSE__ fig.height:__2__ fig.width:__3__ fig.align:__left__
 
 <pre>
-<code>```{r, echo=FALSE,fig.height=2,fig.width:3,fig.align='left',dpi=100}
+<code>```{r, echo=FALSE,fig.height=2,fig.width = 3,fig.align='left',dpi=100}
 library(ggplot2);library(knitr)
 p <- ggplot(iris, aes(Sepal.Width, Sepal.Length)) + geom_point(aes(color = Species))
 p + ggtitle("In R we trust!")
@@ -367,7 +367,7 @@ p + ggtitle("In R we trust!")
 
 * tidy: Dejar el código más arreglado.
 
-* comment('##'; character): com mostra el codi.
+* comment('##'; character): cómo muestra el codigo.
 
 <pre>
 <code>```{r, echo=FALSE}
@@ -646,7 +646,7 @@ header-includes:
 
 Recordar, Tools / Global Options:
 
-<img src="images/img3.tiff" height="400"> 
+<img src="images/img3tiff.png" height="400"> 
 
 ***
 
@@ -810,6 +810,4 @@ Más información en: [http://en.wikibooks.org/wiki/LaTeX/Presentations](http://
 ## Lluís Ramon
 
 ## Carlos Bort
-
-
 
