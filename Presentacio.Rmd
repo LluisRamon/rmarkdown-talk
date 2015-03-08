@@ -552,8 +552,9 @@ Usar chunk option ```result = 'asis'```.
 * package xtable 
 * package simsalapar (toLatex.ftable)
 * package Hmisc
+* Mas packages en [Reproducible Research CRAN Task View][]
 
-http://cran.r-project.org/web/views/ReproducibleResearch.html
+[Reproducible Research CRAN Task View]: http://cran.r-project.org/web/views/ReproducibleResearch.html
 
 ***
 
