@@ -7,6 +7,8 @@ output: slidy_presentation
 
 # Motivación
 
+<br>
+
 ### Automatizar
 
 * Menos tiempo en informes periodicos
@@ -62,6 +64,8 @@ output: slidy_presentation
 
 # Requisitos
 
+<br>
+
 ### Versiones de R y RStudio actualitzadas:
 
 * [R (>= 3.0)](http://cran.r-project.org/)
@@ -93,6 +97,8 @@ output: slidy_presentation
 
 # Markdown basics
 
+<br>
+
 ```markdown
 # Nivel 1 
 ## Nivel 2
@@ -116,6 +122,8 @@ Formulas en formato LaTeX van entre dolares $\beta^2$
 
 ***
 
+<br>
+
 <div class="columns-2">
 <a href="http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-reference.pdf">
 <img src="images/rmarkdown_reference_guide_60.png" height="400" hspace="40">
@@ -126,6 +134,8 @@ Formulas en formato LaTeX van entre dolares $\beta^2$
 
 
 # Document Templates
+
+<br>
 
 <div class="columns-2">
 <a href="http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-reference.pdf">
@@ -147,9 +157,13 @@ Formulas en formato LaTeX van entre dolares $\beta^2$
 
 # Opciones de las templates
 
+<br>
+
 <img src="images/more_options_documents.png" height="400" hspace="40">
 
 # Corrector ortográfico
+
+<br>
 
 <div class="columns-2">
 <img src = "images/corrector_rmarkdown.png" height="200" hspace="40">
@@ -461,6 +475,8 @@ m1$print('chart2', include_assets = TRUE)
 
 # Worth a look
 
+<br>
+
 ## Recopilación de más de 114 ejemplos.
 
 * [https://github.com/yihui/knitr-examples](https://github.com/yihui/knitr-examples)
@@ -494,6 +510,8 @@ m1$print('chart2', include_assets = TRUE)
 
 # Añadir codigo html directamente
 
+<br>
+
 ```html
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2992.980538837
 813!2d2.1940529999999994!3d41.396229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2c
@@ -504,6 +522,8 @@ width="600" height="450" frameborder="0" style="border:0"></iframe>
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2992.980538837813!2d2.1940529999999994!3d41.396229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2c2e2d59ceb%3A0xc4a659466688fe8d!2sitnig!5e0!3m2!1sca!2ses!4v1425493445609" width="600" height="450" frameborder="0" style="border:0"></iframe>
 
 # Añadir codigo html desde R
+
+<br>
 
 <pre>
 <code>```{r, warning = FALSE}
@@ -524,6 +544,8 @@ dygraph(lungDeaths)
 
 # Mejorando el aspecto de las tablas
 
+<br>
+
 Usar chunk option ```result = 'asis'```.
 
 * package knitr (kable)
@@ -536,6 +558,8 @@ http://cran.r-project.org/web/views/ReproducibleResearch.html
 ***
 
 # Ejemplo con xtable
+
+<br>
 
 ```{r, eval = TRUE}
 library(xtable)
@@ -565,6 +589,8 @@ print.xtable(xIris, type = "html")
 
 # Ejemplo knit_print
 
+<br>
+
 ```{r}
 head(iris)
 ```
@@ -576,6 +602,8 @@ head(iris)
 ```
 
 # Añadiendo opciones de LaTeX
+
+<br>
 
 * En documentos pdf o presentaciones Beamer
 * Añadir directamente al codigo o entre dolares
@@ -597,6 +625,8 @@ header-includes:
 ````
 
 # Usar otras templates
+
+<br>
 
 ![templates](images/template_rmarkdown.png)
 
@@ -789,6 +819,8 @@ Más información en: [http://en.wikibooks.org/wiki/LaTeX/Presentations](http://
 ***
 
 # .Rnw/Ejemplos Ejemplos Ejemplos
+
+<br>
 
 [https://github.com/yihui/knitr-examples](https://github.com/yihui/knitr-examples)
 
