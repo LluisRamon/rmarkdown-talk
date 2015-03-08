@@ -525,6 +525,9 @@ width="600" height="450" frameborder="0" style="border:0"></iframe>
 
 <br>
 
+* Usar chunk ```result = asis``` si el resultado del codigo es html
+* No es necesario en el caso de un htmlwidgets
+
 <pre>
 <code>```{r, warning = FALSE}
 library(dygraphs)
@@ -532,8 +535,6 @@ lungDeaths <- cbind(mdeaths, fdeaths)
 dygraph(lungDeath)
 ```</code>
 </pre>
-
-### UPDATE: no es necesario ```result = asis``` con htmlwidgets
 
 ```{r, echo = FALSE, warning = FALSE}
 library(dygraphs)
