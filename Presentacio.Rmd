@@ -851,7 +851,21 @@ Más información en: [http://en.wikibooks.org/wiki/LaTeX/Presentations](http://
 
 # Thank you
 
+<br>
+
 ## Lluís Ramon
 
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<p><i class="fa fa-twitter fa-lg fa-fw"></i> <a href="https://twitter.com/LluisR_Tgn" target="_blank">@LluisR_Tgn</a></p>
+<p><i class="fa fa-github fa-lg fa-fw"></i> <a href="https://github.com/LluisRamon" target="_blank">@LluisRamon</a></p>
+<p><i class="fa fa-linkedin fa-lg fa-fw"></i> <a href="https://www.linkedin.com/in/lluisramon" target="_blank">lluisramon</a></p>
+
+<br>
+
 ## Carlos Bort
+
+<p><i class="fa fa-twitter fa-lg fa-fw"></i> <a href="https://twitter.com/Carlosebort" target="_blank">@Carlosebort</a></p>
+<p><i class="fa fa-github fa-lg fa-fw"></i> <a href="https://github.com/carlosbort" target="_blank">@carlosbort</a></p>
+<p><i class="fa fa-linkedin fa-lg fa-fw"></i> <a href="https://www.linkedin.com/in/carlosbort" target="_blank">carlosbort</a></p>
 
