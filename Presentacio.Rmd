@@ -11,14 +11,14 @@ output: slidy_presentation
 
 ### Automatizar
 
-* Menos tiempo en informes periodicos
+* Menos tiempo en informes periódicos
 * Adaptar documentos parecidos
 * Rapidez
 
 ### Reproducible
 
-* Mas fácil encontrar errores
-* Mas fácil recordar detalles del documento
+* Más fácil encontrar errores
+* Más fácil recordar detalles del documento
 * Sin errores de cortar y pegar
 
 ### Diferentes formatos
@@ -179,7 +179,7 @@ Formulas en formato LaTeX van entre dolares $\beta^2$
     + El sistema se basa en integrar código R a través de chunks.
     + IDEA: Tenemos nuestro documento, en el cual insertamos código R. 
 * Creado por [Yuhui Xie](http://yihui.name/)
-    + Trabajador de Rstudio, "The place where magic happens".
+    + Trabajador de RStudio, "The place where magic happens".
 * [Knitr Definition](http://en.wikipedia.org/wiki/Knitr)
 * [Knitr Website](http://yihui.name/knitr/)
 * [Knitr Book](http://www.amazon.com/dp/1482203537/ref=cm_sw_su_dp)
@@ -493,10 +493,10 @@ m1$print('chart2', include_assets = TRUE)
 
 <br>
 
-* Modificar el tamaño de las graficas
+* Modificar el tamaño de las gráficas
 * Modificar que no se vea el codigo, mensajes, errores o warnings
 * Definir chunks globales con ```opts_chunk$set(...)```
-* Se muestre un grafico en función de una variable
+* Se muestre un gráfico en función de una variable
 
 ***
 
@@ -553,7 +553,7 @@ Usar chunk option ```result = 'asis'```.
 * package xtable 
 * package simsalapar (toLatex.ftable)
 * package Hmisc
-* Mas packages en [Reproducible Research CRAN Task View][]
+* Más packages en [Reproducible Research CRAN Task View][]
 
 [Reproducible Research CRAN Task View]: http://cran.r-project.org/web/views/ReproducibleResearch.html
 
@@ -585,7 +585,7 @@ print.xtable(xIris, type = "html")
 
 * Chunk option ```render = knit_print```
 * Vignette de knitr [Custom Print Methods](http://cran.r-project.org/web/packages/knitr/vignettes/knit_print.html)
-* Definir metodos a la función knit_print de knitr
+* Definir métodos a la función knit_print de knitr
 * Del creador de knitr llega [printr](http://yihui.name/printr/) 
 
 
