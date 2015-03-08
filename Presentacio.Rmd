@@ -495,7 +495,10 @@ m1$print('chart2', include_assets = TRUE)
 # Añadir codigo html directamente
 
 ```html
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2992.980538837813!2d2.1940529999999994!3d41.396229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2c2e2d59ceb%3A0xc4a659466688fe8d!2sitnig!5e0!3m2!1sca!2ses!4v1425493445609" width="600" height="450" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2992.980538837
+813!2d2.1940529999999994!3d41.396229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2c
+2e2d59ceb%3A0xc4a659466688fe8d!2sitnig!5e0!3m2!1sca!2ses!4v1425493445609" 
+width="600" height="450" frameborder="0" style="border:0"></iframe>
 ```
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2992.980538837813!2d2.1940529999999994!3d41.396229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2c2e2d59ceb%3A0xc4a659466688fe8d!2sitnig!5e0!3m2!1sca!2ses!4v1425493445609" width="600" height="450" frameborder="0" style="border:0"></iframe>
