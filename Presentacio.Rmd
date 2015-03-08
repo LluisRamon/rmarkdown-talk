@@ -506,18 +506,21 @@ width="600" height="450" frameborder="0" style="border:0"></iframe>
 # Añadir codigo html desde R
 
 <pre>
-<code>```{r results = 'asis', warning = FALSE}
+<code>```{r, warning = FALSE}
 library(dygraphs)
 lungDeaths <- cbind(mdeaths, fdeaths)
 dygraph(lungDeath)
 ```</code>
 </pre>
 
-```{r, results = 'asis', echo = FALSE, warning = FALSE}
+### UPDATE: no es necesario ```result = asis``` con htmlwidgets
+
+```{r, echo = FALSE, warning = FALSE}
 library(dygraphs)
 lungDeaths <- cbind(mdeaths, fdeaths)
 dygraph(lungDeaths)
 ```
+
 
 # Mejorando el aspecto de las tablas
 
